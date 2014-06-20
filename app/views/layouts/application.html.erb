@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surveillance</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+ <link type="text/css" rel="Stylesheet" href="/assets/slide.css" />
+  <link type="text/css" rel="Stylesheet" href="/assets/demo.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="/assets/slider.js"></script>
+
+
+</head>
+<body background="/assets/bg1.png">
+
+<table width="926" height="100" align="center" border="0"  background="/assets/topA2.png"bordercolor="#000000" cellpadding="0" cellspacing="0">
+<td>
+<table width="745" height="13"  background="/assets/menu.png"  align="right"border="0" bordercolor="#000000" cellpadding="0" cellspacing="0">
+<td> <%=link_to image_tag("home.png",:border => 0,:title=>'Surveillance'), {:action => 'index', :controller => 'home'}%></td> 
+<td> <%=link_to image_tag("type.png",:border => 0,:title=>'Types of Surveillance'), {:action => 'who', :controller => 'home'}%></td>
+<td><%=link_to image_tag("list.png",:border => 0,:title=>'List of Governments'), {:action => 'way',:controller => 'home'}%> </td>
+<td> <%=link_to image_tag("other.png",:border => 0,:title=>'Others'),{:action => 'catch', :controller =>'home'}%></td>
+<!-- <td> <%#link_to image_tag("cu.png",:border => 0,:title=>'Contact Us'), {:action => 'cu', :controller => 'home'}%></td> -->
+</table>
+</td>
+</table>
+
+
+<%= yield %>
+
+<table width="926" height="100" background="/assets/lowB1.png" align="center" border="0" bordercolor="#000000" cellpadding="0" cellspacing="0">
+<td>
+<table width="750" height="10" align="left" background="/assets/lmenu.png" border="0" bordercolor="#000000" cellpadding="0" cellspacing="0">
+<td> <%=link_to image_tag("sur.png",:border => 0,:title=>'Surveillance'), {:action => 'index', :controller => 'home'}%></td> 
+<td> <%=link_to image_tag("type.png",:border => 0,:title=>'Types of Surveillance'), {:action => 'who', :controller => 'home'}%></td>
+<td><%=link_to image_tag("list.png",:border => 0,:title=>'List of Governments'), {:action => 'way',:controller => 'home'}%> </td>
+<td> <%=link_to image_tag("other.png",:border => 0,:title=>'Others'),{:action => 'catch', :controller =>'home'}%></td>
+</table>
+</td>
+</table>
+
+
+
+</body>
+</html>
